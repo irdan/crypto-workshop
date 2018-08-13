@@ -1,0 +1,15 @@
+[Unit]
+Description=Crypto workshop hashing server
+After=syslog.target
+
+[Service]
+Type=simple
+User=dantheman
+Group=dantheman
+WorkingDirectory=/home/dantheman/crypto-workshop/server
+ExecStart=/home/dantheman/crypto-workshop/server/hashing-server.py
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
