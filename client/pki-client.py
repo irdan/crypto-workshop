@@ -74,7 +74,7 @@ def get_intermediate_cert_by_sn(ID, SN):
         text: The certficate associated with the SN that was provided
         pem: The certificate in pem format
     '''
-    url = "http://{}:{}/get_cert".format(config['ip'], config['port2'], level)
+    url = "http://{}:{}/get_cert".format(config['ip'], config['port2'])
     params = dict(
         ID=ID,
         SN=SN
