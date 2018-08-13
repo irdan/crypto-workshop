@@ -68,7 +68,7 @@ def get_hint(ID, level):
         return response.json()
 
 
-def get_intermediate_cert_by_sn(ID, SN):
+def get_intermediate_cert_by_sn(ID, SN, level):
     '''
     get_cert_by_sn returns a dict that contains:
         text: The certficate associated with the SN that was provided
